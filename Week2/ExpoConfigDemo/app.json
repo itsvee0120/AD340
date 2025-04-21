@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "ExpoConfigDemo",
+    "slug": "ExpoConfigDemo",
+    "version": "1.0.0",
+    "description": "A demo Expo app to explore app.json configuration options.",
+    "owner": "itsvee0120",
+    "privacy": "public",
+    "orientation": "portrait",
+    "icon": "./assets/images/cox.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.itsvee0120.expoconfigdemo"
+    },
+    "android": {
+      "package": "com.itsvee0120.expoconfigdemo",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/cox.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

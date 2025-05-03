@@ -1,0 +1,26 @@
+/* src/App.css */
+.app-container {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.feature-toggle {
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.feature-toggle.enabled {
+  background-color: #4caf50;
+  color: white;
+}
+
+.feature-toggle.disabled {
+  background-color: #ff5252;
+  color: white;
+}

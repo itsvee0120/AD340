@@ -21,7 +21,6 @@ To get started with this project, follow the instructions below:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/counter-app.git
    cd counter-app
    ```
 

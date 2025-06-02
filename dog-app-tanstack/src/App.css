@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  gap: 20px; /* Space between columns */
+}
+
+/* Left Column (Dog Groups) */
+.dog-groups {
+  flex: 3; /* Takes 3 parts of the available space */
+}
+
+/* Right Column (Dog Facts) */
+.dog-facts {
+  flex: 1; /* Takes 1 part of the available space */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Breed List Styles */
+.dog-breeds {
+  margin-bottom: 30px;
+}
+
+/* Breed Details Styles */
+.breed-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.breed-details h3 {
+  margin-top: 0;
+}
+
+.breed-details p {
+  margin: 10px 0;
+}
+
+/* Dog Groups Grid Layout */
+.dog-groups ul {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px; /* Space between boxes */
+}
+
+.dog-groups li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dog-groups li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

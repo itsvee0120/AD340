@@ -1,0 +1,28 @@
+/* src/components/DogFacts.css */
+
+.dog-facts {
+  margin-bottom: 2rem;
+}
+
+.dog-facts h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.dog-facts ul {
+  list-style-type: none;
+}
+
+.dog-facts li {
+  background-color: #f8f8f8;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dog-facts li:nth-child(odd) {
+  background-color: #f1f1f1;
+}

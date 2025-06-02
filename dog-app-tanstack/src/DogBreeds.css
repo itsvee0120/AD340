@@ -1,0 +1,38 @@
+/* src/components/DogBreeds.css */
+
+.dog-breeds {
+  margin-bottom: 2rem;
+}
+
+.dog-breeds h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.dog-breeds ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dog-breeds li {
+  background-color: #f8f8f8;
+  margin: 10px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.dog-breeds li:hover {
+  transform: translateY(-5px);
+  background-color: #eef0f1;
+}
+
+.dog-breeds li:active {
+  transform: translateY(0);
+}

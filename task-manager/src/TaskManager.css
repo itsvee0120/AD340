@@ -1,0 +1,85 @@
+/* Overall container for the task manager */
+.task-manager {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title style */
+.task-manager h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input field and button container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Center the button separately below the input field */
+.add-task-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Task list and individual task item */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-title {
+  flex-grow: 1;
+  font-size: 16px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}

@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Task Manager App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native task manager app with a Node.js backend API.
+Supports creating, reading, updating, and deleting (CRUD) tasks.
 
-## Get started
+## Features
 
-1. Install dependencies
+- View all tasks
+- Add new tasks
+- Edit existing tasks
+- Delete tasks with confirmation
+- Mark tasks as complete/incomplete
+- Uses React Query for data fetching and mutation
+- Backend API built with Node.js and NestJS
+
+## Tech Stack
+
+- **Frontend:** React Native, React Query, Axios
+- **Backend:** Node.js, NestJS (or your chosen backend framework)
+- **API:** RESTful endpoints
+
+## Setup & Run
+
+### Backend
+
+1. Clone the backend repo or use your existing backend.
+2. Install dependencies:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Start the backend server:
 
    ```bash
-   npx expo start
+   npm run start
    ```
 
-In the output, you'll find options to open the app in a
+4. Make sure your backend runs on a reachable IP and port .
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Frontend (React Native)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+1. Clone the frontend repo or use your existing project.
+2. Install dependencies:
 
-## Get a fresh project
+   ```bash
+   npm install
+   ```
 
-When you're ready, run:
+3. Update the backend API base URL in `services/api.js` to your backend IP address.
+4. Run the React Native app:
 
-```bash
-npm run reset-project
-```
+   ```bash
+   npm run android
+   # or
+   npm run ios
+   ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+5. Use the app to manage your tasks!
 
-## Learn more
+## Notes
 
-To learn more about developing your project with Expo, look at the following resources:
+- If testing on a physical device, ensure your computer and device are on the same network.
+- Adjust the API base URL accordingly in `services/api.js`.
+- React Query handles data caching and synchronization.
+- API logs requests and responses to help with debugging.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Troubleshooting
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- If tasks don’t load or you get connection errors, check your backend is running and the IP address is correct.
+- Use React Native Debugger or network inspector to monitor API calls.
+- For backend errors, check backend console logs.
